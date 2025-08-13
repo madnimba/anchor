@@ -4,15 +4,15 @@ import { Anchor, Mail, Phone, MapPin } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center ring-1 ring-slate-700">
                 <Anchor className="w-5 h-5 text-slate-900" />
               </div>
-              <span className="font-heading font-bold text-xl text-slate-100">Anchorio</span>
+              <span className="font-heading font-bold text-lg sm:text-xl text-slate-100">ANCHORIO</span>
             </div>
             <p className="text-slate-400 mb-4 max-w-md">
               Premium marine anchors engineered for maximum holding power. Steady in every storm, trusted by
@@ -23,7 +23,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading font-semibold text-slate-100 mb-4">Quick Links</h3>
+            <h3 className="font-heading font-semibold text-slate-100 mb-3 md:mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-slate-400 hover:text-teal-400 transition-colors">

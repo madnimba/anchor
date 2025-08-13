@@ -12,7 +12,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="pt-24 md:pt-28 pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div
             className="w-full h-full"
@@ -32,11 +32,12 @@ export default function HomePage() {
                   Premium Marine Equipment
                 </Badge>
                 <h1 className="font-bold text-5xl md:text-7xl text-slate-100 leading-tight">
-                  Steady in Every{" "}
-                  <span className="text-teal-400 relative">
-                    Storm
-                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full"></div>
-                  </span>
+                  <span className="relative inline-block">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">Steady</span>
+                    <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full"></span>
+                  </span>{" "}
+                  in Every{" "}
+                  <span className="text-slate-100">Storm</span>
                 </h1>
                 <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
                   Premium marine anchors engineered for maximum holding power. Built to withstand the harshest
@@ -79,14 +80,14 @@ export default function HomePage() {
             <div className="relative">
               <div className="bg-slate-800/50 rounded-2xl p-8 backdrop-blur-sm border border-slate-700 relative overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&h=500&fit=crop&crop=center"
+                  src="/anchor1.jpg"
                   alt="Premium Anchorio Marine Anchor - Hero Product Shot"
-                  className="w-full h-96 object-cover rounded-xl shadow-2xl"
+                  className="w-full h-64 md:h-96 object-cover rounded-xl shadow-2xl"
                 />
-                <div className="absolute -top-4 -right-4 bg-gradient-to-r from-teal-500 to-blue-500 text-white px-6 py-3 rounded-lg font-bold shadow-lg">
+                <div className="absolute top-3 right-3 md:top-4 md:right-4 bg-gradient-to-r from-teal-500 to-blue-500 text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-bold shadow-lg text-xs sm:text-sm md:text-base z-10">
                   Premium Quality
                 </div>
-                <div className="absolute -bottom-4 -left-4 bg-slate-900/90 text-teal-400 px-4 py-2 rounded-lg font-medium border border-slate-700">
+                <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-slate-900/90 text-teal-400 px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-medium border border-slate-700 text-xs sm:text-sm md:text-base z-10">
                   316 Marine Steel
                 </div>
               </div>

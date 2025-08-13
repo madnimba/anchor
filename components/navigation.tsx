@@ -12,13 +12,21 @@ export function Navigation() {
     <nav className="fixed top-0 w-full z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Logo + Brand */}
           <Link href="/" className="flex items-center space-x-3 group">
             <img
               src="/images/anchorio-logo.png"
               alt="Anchorio Logo"
-              className="h-10 w-auto group-hover:scale-105 transition-transform"
+              className="h-10 w-10 rounded-full ring-1 ring-slate-700 object-cover group-hover:scale-105 transition-transform"
             />
+            <div className="flex flex-col leading-none">
+              <span className="font-heading font-extrabold tracking-wider text-slate-100 text-xl sm:text-2xl md:text-3xl whitespace-nowrap">
+                ANCHORIO
+              </span>
+              <span className="text-[10px] sm:text-xs text-slate-400">
+                Designed by <span className="text-teal-400 font-semibold">Wasif Islam Saad</span>
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

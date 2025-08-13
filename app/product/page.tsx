@@ -14,8 +14,8 @@ export default function ProductPage() {
       {/* Product Hero - Enhanced with Multiple Angles */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+          <div className="grid grid-cols-1 gap-8 items-center">
+            <div className="space-y-8 max-w-3xl mx-auto text-center">
               <Badge className="bg-teal-500/20 text-teal-400 border-teal-500/30 px-4 py-2">Premium Marine Anchor</Badge>
               <h1 className="font-bold text-5xl md:text-6xl text-slate-100 leading-tight">
                 Anchorio Marine Anchor System
@@ -25,7 +25,7 @@ export default function ProductPage() {
                 holding power and tested in the world's most challenging waters.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 <div className="flex items-center space-x-3 text-slate-300">
                   <CheckCircle className="w-5 h-5 text-teal-400 flex-shrink-0" />
                   <span>316 Marine Grade Steel</span>
@@ -44,7 +44,7 @@ export default function ProductPage() {
                 </div>
               </div>
 
-              <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+              <div className="bg-slate-800/50 rounded-xl p-5 md:p-6 border border-slate-700">
                 <h3 className="font-bold text-lg text-slate-100 mb-3">Materials & Testing</h3>
                 <p className="text-slate-300 leading-relaxed">
                   Each Anchorio anchor is forged from premium 316 marine-grade stainless steel and undergoes rigorous
@@ -54,50 +54,12 @@ export default function ProductPage() {
                 </p>
               </div>
             </div>
-
-            <div className="space-y-6">
-              <div className="relative">
-                <div className="bg-slate-800/50 rounded-2xl p-6 backdrop-blur-sm border border-slate-700">
-                  <img
-                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop&crop=center"
-                    alt="Anchorio Marine Anchor - Front View"
-                    className="w-full h-80 object-cover rounded-xl"
-                  />
-                  <div className="absolute top-2 right-2 bg-slate-900/90 text-teal-400 px-3 py-1 rounded-lg text-sm font-medium">
-                    Front View
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&h=200&fit=crop&crop=center"
-                    alt="Anchorio Marine Anchor - Side Profile"
-                    className="w-full h-32 object-cover rounded-lg border border-slate-700"
-                  />
-                  <div className="absolute bottom-2 left-2 bg-slate-900/90 text-slate-300 px-2 py-1 rounded text-xs">
-                    Side Profile
-                  </div>
-                </div>
-                <div className="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=200&fit=crop&crop=center"
-                    alt="Anchorio Marine Anchor - Detail Shot"
-                    className="w-full h-32 object-cover rounded-lg border border-slate-700"
-                  />
-                  <div className="absolute bottom-2 left-2 bg-slate-900/90 text-slate-300 px-2 py-1 rounded text-xs">
-                    Detail View
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Product Variants - Enhanced with Compact Cards */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-16 md:py-24 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-bold text-4xl md:text-5xl text-slate-100 mb-6">Choose Your Model</h2>
@@ -107,12 +69,12 @@ export default function ProductPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Commercial Model - Enhanced */}
             <Card className="bg-slate-800 border-slate-700 hover:border-blue-500/50 transition-all duration-500 group hover:shadow-2xl hover:shadow-blue-500/10">
               <CardHeader className="text-center pb-4">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Ship className="w-10 h-10 text-blue-400" />
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Ship className="w-8 h-8 md:w-10 md:h-10 text-blue-400" />
                 </div>
                 <CardTitle className="font-bold text-2xl text-slate-100">Commercial Maritime</CardTitle>
                 <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30 w-fit mx-auto px-3 py-1">
@@ -120,10 +82,10 @@ export default function ProductPage() {
                 </Badge>
               </CardHeader>
               <CardContent className="space-y-6">
-                <img
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center"
+                 <img
+                  src="/commercial.png"
                   alt="Commercial Maritime Anchor"
-                  className="w-full h-48 object-cover rounded-lg"
+                   className="w-full h-auto object-contain rounded-lg block"
                 />
 
                 <div className="space-y-4">
@@ -162,8 +124,8 @@ export default function ProductPage() {
             {/* Universal Model - Enhanced */}
             <Card className="bg-slate-800 border-teal-500/30 hover:border-teal-500/70 transition-all duration-500 group hover:shadow-2xl hover:shadow-teal-500/20 ring-1 ring-teal-500/20">
               <CardHeader className="text-center pb-4">
-                <div className="w-20 h-20 bg-gradient-to-br from-teal-500/20 to-teal-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Anchor className="w-10 h-10 text-teal-400" />
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-teal-500/20 to-teal-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Anchor className="w-8 h-8 md:w-10 md:h-10 text-teal-400" />
                 </div>
                 <CardTitle className="font-bold text-2xl text-slate-100">Universal</CardTitle>
                 <Badge className="bg-teal-500/20 text-teal-400 border-teal-500/30 w-fit mx-auto px-3 py-1">
@@ -171,10 +133,10 @@ export default function ProductPage() {
                 </Badge>
               </CardHeader>
               <CardContent className="space-y-6">
-                <img
-                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop&crop=center"
+                 <img
+                  src="/universal.png"
                   alt="Universal Marine Anchor"
-                  className="w-full h-48 object-cover rounded-lg"
+                   className="w-full h-auto object-contain rounded-lg block"
                 />
 
                 <div className="space-y-4">
@@ -213,8 +175,8 @@ export default function ProductPage() {
             {/* Recreational Model - Enhanced */}
             <Card className="bg-slate-800 border-slate-700 hover:border-emerald-500/50 transition-all duration-500 group hover:shadow-2xl hover:shadow-emerald-500/10">
               <CardHeader className="text-center pb-4">
-                <div className="w-20 h-20 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Sailboat className="w-10 h-10 text-emerald-400" />
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Sailboat className="w-8 h-8 md:w-10 md:h-10 text-emerald-400" />
                 </div>
                 <CardTitle className="font-bold text-2xl text-slate-100">Recreational Marine</CardTitle>
                 <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 w-fit mx-auto px-3 py-1">
@@ -222,10 +184,10 @@ export default function ProductPage() {
                 </Badge>
               </CardHeader>
               <CardContent className="space-y-6">
-                <img
-                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop&crop=center"
+                 <img
+                  src="/recreational.png"
                   alt="Recreational Marine Anchor"
-                  className="w-full h-48 object-cover rounded-lg"
+                   className="w-full h-auto object-contain rounded-lg block"
                 />
 
                 <div className="space-y-4">
@@ -265,20 +227,20 @@ export default function ProductPage() {
       </section>
 
       {/* Target Group Applications - Enhanced Split Section */}
-      <section className="py-24 bg-slate-800">
+      <section className="py-16 md:py-24 bg-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="commercial" className="w-full">
-            <div className="text-center mb-16">
-              <h2 className="font-bold text-4xl md:text-5xl text-slate-100 mb-6">Applications & Use Cases</h2>
-              <p className="text-xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="font-bold text-3xl md:text-5xl text-slate-100 mb-4 md:mb-6">Applications & Use Cases</h2>
+              <p className="text-lg md:text-xl text-slate-400 mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
                 Discover how Anchorio anchors serve different maritime sectors with specialized solutions for every
                 operational requirement
               </p>
               <TabsList className="bg-slate-700 border-slate-600 p-1">
-                <TabsTrigger value="commercial" className="data-[state=active]:bg-slate-600 px-8 py-3 text-base">
+                <TabsTrigger value="commercial" className="data-[state=active]:bg-slate-600 px-5 md:px-8 py-2.5 md:py-3 text-sm md:text-base">
                   Commercial Maritime
                 </TabsTrigger>
-                <TabsTrigger value="recreational" className="data-[state=active]:bg-slate-600 px-8 py-3 text-base">
+                <TabsTrigger value="recreational" className="data-[state=active]:bg-slate-600 px-5 md:px-8 py-2.5 md:py-3 text-sm md:text-base">
                   Recreational Marine
                 </TabsTrigger>
               </TabsList>
@@ -358,7 +320,7 @@ export default function ProductPage() {
 
                 <div className="relative">
                   <img
-                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop&crop=center"
+                    src="/anchor3.webp"
                     alt="Commercial Maritime Vessel with Anchorio Anchor"
                     className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                   />
@@ -447,7 +409,7 @@ export default function ProductPage() {
 
                 <div className="relative">
                   <img
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center"
+                    src="/anchor3.webp"
                     alt="Recreational Sailing Vessel with Anchorio Anchor"
                     className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                   />
@@ -466,22 +428,22 @@ export default function ProductPage() {
       </section>
 
       {/* Mini Specs Section - Enhanced with Icon-Based Table */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-16 md:py-24 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="font-bold text-4xl md:text-5xl text-slate-100 mb-6">Technical Specifications</h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          <div className="text-center mb-12 md:mb-20">
+            <h2 className="font-bold text-3xl md:text-5xl text-slate-100 mb-4 md:mb-6">Technical Specifications</h2>
+            <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
               Precision engineering meets maritime excellence in every detail. See the technical specifications that set
               Anchorio apart from the competition.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-16">
             {/* Material */}
             <Card className="bg-slate-800 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Shield className="w-8 h-8 text-teal-400" />
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Shield className="w-7 h-7 md:w-8 md:h-8 text-teal-400" />
                 </div>
                 <h3 className="font-bold text-xl text-slate-100 mb-3">Material</h3>
                 <p className="text-slate-400 mb-2">316 Marine Grade</p>
@@ -492,9 +454,9 @@ export default function ProductPage() {
 
             {/* Weight Range */}
             <Card className="bg-slate-800 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Weight className="w-8 h-8 text-teal-400" />
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Weight className="w-7 h-7 md:w-8 md:h-8 text-teal-400" />
                 </div>
                 <h3 className="font-bold text-xl text-slate-100 mb-3">Weight Range</h3>
                 <p className="text-slate-400 mb-2">5 lbs - 500 lbs</p>
@@ -505,9 +467,9 @@ export default function ProductPage() {
 
             {/* Holding Power */}
             <Card className="bg-slate-800 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Zap className="w-8 h-8 text-teal-400" />
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Zap className="w-7 h-7 md:w-8 md:h-8 text-teal-400" />
                 </div>
                 <h3 className="font-bold text-xl text-slate-100 mb-3">Holding Ratio</h3>
                 <p className="text-slate-400 mb-2">15:1 Weight to Hold</p>
@@ -518,9 +480,9 @@ export default function ProductPage() {
 
             {/* Dimensions */}
             <Card className="bg-slate-800 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  <Ruler className="w-8 h-8 text-teal-400" />
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                  <Ruler className="w-7 h-7 md:w-8 md:h-8 text-teal-400" />
                 </div>
                 <h3 className="font-bold text-xl text-slate-100 mb-3">Dimensions</h3>
                 <p className="text-slate-400 mb-2">Custom Sized</p>
@@ -530,42 +492,42 @@ export default function ProductPage() {
             </Card>
           </div>
 
-          <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 mb-12">
-            <h3 className="font-bold text-2xl text-slate-100 mb-8 text-center">Detailed Specifications</h3>
+          <div className="bg-slate-800/50 rounded-2xl p-6 md:p-8 border border-slate-700 mb-10 md:mb-12">
+            <h3 className="font-bold text-xl md:text-2xl text-slate-100 mb-6 md:mb-8 text-center">Detailed Specifications</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-slate-700">
-                    <th className="text-left py-4 px-4 text-slate-300 font-medium">Specification</th>
-                    <th className="text-center py-4 px-4 text-slate-300 font-medium">Recreational</th>
-                    <th className="text-center py-4 px-4 text-slate-300 font-medium">Universal</th>
-                    <th className="text-center py-4 px-4 text-slate-300 font-medium">Commercial</th>
+                    <th className="text-left py-3 md:py-4 px-3 md:px-4 text-slate-300 font-medium">Specification</th>
+                    <th className="text-center py-3 md:py-4 px-3 md:px-4 text-slate-300 font-medium">Recreational</th>
+                    <th className="text-center py-3 md:py-4 px-3 md:px-4 text-slate-300 font-medium">Universal</th>
+                    <th className="text-center py-3 md:py-4 px-3 md:px-4 text-slate-300 font-medium">Commercial</th>
                   </tr>
                 </thead>
                 <tbody className="text-slate-400">
                   <tr className="border-b border-slate-700/50">
-                    <td className="py-4 px-4 font-medium">Weight Range</td>
-                    <td className="py-4 px-4 text-center">5-50 lbs</td>
-                    <td className="py-4 px-4 text-center">15-150 lbs</td>
-                    <td className="py-4 px-4 text-center">50-500 lbs</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 font-medium">Weight Range</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">5-50 lbs</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">15-150 lbs</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">50-500 lbs</td>
                   </tr>
                   <tr className="border-b border-slate-700/50">
-                    <td className="py-4 px-4 font-medium">Holding Power</td>
-                    <td className="py-4 px-4 text-center">Up to 750 lbs</td>
-                    <td className="py-4 px-4 text-center">Up to 2,250 lbs</td>
-                    <td className="py-4 px-4 text-center">Up to 7,500 lbs</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 font-medium">Holding Power</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">Up to 750 lbs</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">Up to 2,250 lbs</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">Up to 7,500 lbs</td>
                   </tr>
                   <tr className="border-b border-slate-700/50">
-                    <td className="py-4 px-4 font-medium">Chain Size</td>
-                    <td className="py-4 px-4 text-center">3/16" - 3/8"</td>
-                    <td className="py-4 px-4 text-center">1/4" - 5/8"</td>
-                    <td className="py-4 px-4 text-center">3/8" - 1"</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 font-medium">Chain Size</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">3/16" - 3/8"</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">1/4" - 5/8"</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center">3/8" - 1"</td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-4 font-medium">Warranty</td>
-                    <td className="py-4 px-4 text-center text-teal-400">Lifetime</td>
-                    <td className="py-4 px-4 text-center text-teal-400">Lifetime</td>
-                    <td className="py-4 px-4 text-center text-teal-400">Lifetime</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 font-medium">Warranty</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center text-teal-400">Lifetime</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center text-teal-400">Lifetime</td>
+                    <td className="py-3 md:py-4 px-3 md:px-4 text-center text-teal-400">Lifetime</td>
                   </tr>
                 </tbody>
               </table>
@@ -573,7 +535,7 @@ export default function ProductPage() {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="bg-teal-600 hover:bg-teal-500 text-white font-medium px-10 py-4 text-lg group">
+            <Button size="sm" className="bg-teal-600 hover:bg-teal-500 text-white font-medium px-6 py-3 text-base md:px-10 md:py-4 md:text-lg group">
               Download Full Spec Sheet
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>

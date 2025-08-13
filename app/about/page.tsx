@@ -26,7 +26,7 @@ export default function AboutPage() {
               traditional craftsmanship with cutting-edge engineering to create anchors that never let you down.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto pt-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto pt-6 sm:pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-teal-400 mb-2">20+</div>
                 <div className="text-slate-400">Years Experience</div>
@@ -51,7 +51,7 @@ export default function AboutPage() {
       {/* Brand Story - Enhanced */}
       <section className="py-24 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <div className="space-y-10">
               <div className="space-y-6">
                 <h2 className="font-bold text-4xl md:text-5xl text-slate-100">Why Anchorio Exists</h2>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
                 <div className="text-center group">
                   <div className="w-20 h-20 bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                     <Target className="w-10 h-10 text-teal-400" />
@@ -107,17 +107,17 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-slate-800/50 rounded-2xl p-8 backdrop-blur-sm border border-slate-700">
+              <div className="relative">
+                <div className="bg-slate-800/50 rounded-2xl p-6 md:p-8 backdrop-blur-sm border border-slate-700">
                 <img
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=500&fit=crop&crop=center"
+                  src="/MACHINE-SHOP.jpg"
                   alt="Anchorio Manufacturing Process and Heritage"
-                  className="w-full h-96 object-cover rounded-xl"
+                  className="w-full h-64 md:h-96 object-cover rounded-xl"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-teal-500 to-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl">
+                  <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-teal-500 to-blue-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold text-base md:text-lg shadow-2xl">
                   Since 2002
                 </div>
-                <div className="absolute -top-6 -left-6 bg-slate-900/90 text-teal-400 px-6 py-3 rounded-xl font-medium border border-slate-700">
+                  <div className="absolute -top-6 -left-6 bg-slate-900/90 text-teal-400 px-4 md:px-6 py-2 md:py-3 rounded-xl font-medium border border-slate-700">
                   Maritime Heritage
                 </div>
               </div>
@@ -126,101 +126,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Visual Identity Strip - Enhanced */}
-      <section className="py-24 bg-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="font-bold text-4xl md:text-5xl text-slate-100 mb-6">Our Visual Identity</h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-              Every element of our brand reflects our commitment to maritime excellence and the values that drive us
-              forward
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Logo */}
-            <Card className="bg-slate-900 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-10">
-                <div className="w-24 h-24 mx-auto mb-8 group-hover:scale-110 transition-transform">
-                  <img src="/images/anchorio-logo.png" alt="Anchorio Logo" className="w-full h-full object-contain" />
-                </div>
-                <h3 className="font-bold text-2xl text-slate-100 mb-4">Brand Logo</h3>
-                <p className="text-slate-400 leading-relaxed mb-4">
-                  The shield represents protection and strength, while the anchor symbolizes our core mission: keeping
-                  you steady in every storm
-                </p>
-                <div className="text-sm text-slate-500">"STEADY IN EVERY STORM" - Our brand promise</div>
-              </CardContent>
-            </Card>
-
-            {/* Colors */}
-            <Card className="bg-slate-900 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-10">
-                <div className="flex justify-center space-x-3 mb-8">
-                  <div className="space-y-2">
-                    <div className="w-12 h-12 bg-slate-800 rounded-xl border-2 border-slate-600 group-hover:scale-110 transition-transform"></div>
-                    <div className="text-xs text-slate-500">Navy</div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="w-12 h-12 bg-slate-600 rounded-xl group-hover:scale-110 transition-transform"></div>
-                    <div className="text-xs text-slate-500">Silver</div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="w-12 h-12 bg-teal-500 rounded-xl group-hover:scale-110 transition-transform"></div>
-                    <div className="text-xs text-slate-500">Ocean</div>
-                  </div>
-                </div>
-                <h3 className="font-bold text-2xl text-slate-100 mb-4">Color Palette</h3>
-                <p className="text-slate-400 leading-relaxed mb-4">
-                  Navy blue for trust and stability, silver for premium quality, and ocean teal for maritime heritage
-                </p>
-                <div className="text-sm text-slate-500">Inspired by the depths of the ocean</div>
-              </CardContent>
-            </Card>
-
-            {/* Typography & Tagline */}
-            <Card className="bg-slate-900 border-slate-700 text-center hover:border-teal-500/50 transition-all duration-300 group">
-              <CardContent className="p-10">
-                <div className="w-24 h-24 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform border border-slate-600">
-                  <span className="text-4xl font-bold text-teal-400">"</span>
-                </div>
-                <h3 className="font-bold text-2xl text-slate-100 mb-4">Brand Voice</h3>
-                <p className="text-slate-400 leading-relaxed mb-4">
-                  Bold, confident typography paired with our signature tagline that promises reliability when it matters
-                  most
-                </p>
-                <div className="text-lg font-bold text-teal-400 italic">"Steady in Every Storm"</div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-16 bg-slate-900/50 rounded-2xl p-8 border border-slate-700">
-            <h3 className="font-bold text-2xl text-slate-100 mb-8 text-center">Complete Brand System</h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <Award className="w-12 h-12 text-teal-400 mx-auto mb-4" />
-                <h4 className="font-bold text-slate-100 mb-2">Premium Quality</h4>
-                <p className="text-sm text-slate-400">Every element reflects our commitment to excellence</p>
-              </div>
-              <div>
-                <Users className="w-12 h-12 text-teal-400 mx-auto mb-4" />
-                <h4 className="font-bold text-slate-100 mb-2">Trust & Reliability</h4>
-                <p className="text-sm text-slate-400">Built on decades of maritime expertise</p>
-              </div>
-              <div>
-                <Globe className="w-12 h-12 text-teal-400 mx-auto mb-4" />
-                <h4 className="font-bold text-slate-100 mb-2">Global Recognition</h4>
-                <p className="text-sm text-slate-400">Recognized worldwide for superior performance</p>
-              </div>
-              <div>
-                <Wrench className="w-12 h-12 text-teal-400 mx-auto mb-4" />
-                <h4 className="font-bold text-slate-100 mb-2">Engineering Excellence</h4>
-                <p className="text-sm text-slate-400">Precision craftsmanship in every anchor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Contact Form - Enhanced */}
       <section className="py-24 bg-slate-900">
@@ -233,7 +139,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             {/* Contact Info - Enhanced */}
             <div className="space-y-10">
               <div>
@@ -307,7 +213,7 @@ export default function AboutPage() {
                 <p className="text-slate-400">Tell us about your anchoring needs and we'll provide expert guidance</p>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-300">Full Name *</label>
                     <Input
@@ -325,7 +231,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-300">Phone Number</label>
                     <Input
